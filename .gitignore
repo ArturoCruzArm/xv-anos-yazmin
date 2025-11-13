@@ -1,0 +1,36 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Carpetas de node_modules (si se usa en el futuro)
+node_modules/
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Archivos sensibles (si los hay)
+config-local.js
+secrets.json
+
+# Fotos originales JPG (muy pesadas para Git)
+fotos-sesion/
+
+# Las fotos WebP SÍ se suben (optimizadas para web)
+# fotos-webp/ - COMENTADO para permitir subir
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,348 @@
+================================================================================
+                    PROYECTO XV AÑOS - GERALDINE GUADALUPE
+                           Sitio Web Completo
+================================================================================
+
+📋 INFORMACIÓN GENERAL
+================================================================================
+Nombre del Proyecto: xv-anos-geraldine
+Descripción: Sitio web elegante con invitación y contrato para XV años
+Ubicación: /root/geraldine-15-anos/
+Fecha de Creación: Diciembre 2025
+
+================================================================================
+✨ CARACTERÍSTICAS PRINCIPALES
+================================================================================
+
+✅ Página Principal de Invitación (index.html)
+   - Diseño elegante con tema dorado
+   - Información del evento (fecha, hora, ubicación)
+   - Detalles de la fiesta y entretenimiento
+   - Información del paquete fotográfico
+   - Botones para acceder al contrato y contacto
+
+✅ Contrato de Servicios Fotográficos (contrato.html)
+   - Documento profesional y legal
+   - Información completa del paquete
+   - Detalles del evento
+   - Términos y condiciones
+   - Espacios para firmas
+   - Optimizado para imprimir
+   - Genera PDF directamente desde el navegador
+
+✅ Página de Contacto (contacto.html)
+   - Formulario de contacto
+   - Información de contacto del fotógrafo
+   - Formulario de mensaje personalizado
+   - Enlaces a WhatsApp y email
+
+✅ Panel Administrativo (admin.html)
+   - Interfaz visual para editar la configuración
+   - Sin necesidad de editar código
+   - Almacenamiento en navegador (localStorage)
+   - Exportar/Importar configuración
+   - Actualización de precios en tiempo real
+
+✅ Sistema de Configuración (config.js)
+   - Archivo centralizado con toda la información del evento
+   - Fácil personalización
+   - Variables JavaScript para uso dinámico
+   - Exportar/Importar en formato JSON
+
+✅ Estilos Profesionales (css/)
+   - Dos hojas de estilo optimizadas
+   - Diseño responsivo (mobile, tablet, desktop)
+   - Colores personalizables
+   - Animaciones suaves
+   - Gradientes elegantes
+
+✅ Scripts Interactivos (js/)
+   - Animaciones de carga
+   - Validación de formularios
+   - Interactividad mejorada
+
+✅ Scripts Auxiliares Python (scripts/)
+   - generar_qr.py: Generar códigos QR para compartir
+   - comprimir_imagenes.py: Optimizar imágenes del evento
+
+================================================================================
+📁 ESTRUCTURA DEL PROYECTO
+================================================================================
+
+geraldine-15-anos/
+│
+├── 📄 ARCHIVOS PRINCIPALES
+│   ├── index.html              → Página principal de invitación
+│   ├── contrato.html           → Contrato de servicios
+│   ├── contacto.html           → Página de contacto
+│   └── admin.html              → Panel administrativo
+│
+├── 🎨 ESTILOS (css/)
+│   ├── styles.css              → Estilos principales
+│   └── contrato-styles.css     → Estilos del contrato
+│
+├── ⚙️ CONFIGURACIÓN
+│   ├── config.js               → Configuración del evento
+│   └── .gitignore              → Archivos ignorados por Git
+│
+├── 📜 SCRIPTS (js/)
+│   └── script.js               → Scripts interactivos
+│
+├── 🐍 UTILIDADES (scripts/)
+│   ├── generar_qr.py           → Generador de códigos QR
+│   ├── comprimir_imagenes.py   → Compresor de imágenes
+│   └── README.md               → Documentación de scripts
+│
+├── 📁 CARPETAS VACÍAS (listas para usar)
+│   ├── images/                 → Para fotos del evento
+│   ├── audio/                  → Para música de fondo
+│   └── codigos_qr/             → Para códigos QR generados
+│
+└── 📚 DOCUMENTACIÓN
+    ├── README.md               → Información general
+    ├── GUIA_INSTALACION.md     → Guía de instalación y uso
+    └── RESUMEN.txt             → Este archivo
+
+================================================================================
+🎨 COLORES PERSONALIZADOS
+================================================================================
+
+Color Primario (Oro):      #D4AF37
+Color Oscuro (Oro Oscuro): #DAA520
+Color Claro (Oro Claro):   #FFD700
+Fondo Oscuro:               #1a1a1a
+Fondo Claro:               #ffffff
+Texto Oscuro:              #333333
+Texto Claro:               #f5f5f5
+
+(Personalizable desde admin.html o config.js)
+
+================================================================================
+📊 INFORMACIÓN DEL EVENTO
+================================================================================
+
+Quinceañera:    Geraldine Guadalupe Villegas
+Madre:          Elida Villegas
+Fecha:          31 de Diciembre de 2025
+Vestido:        Dorado
+
+CEREMONIA RELIGIOSA
+- Lugar:        Parroquia Principal de Nuestra Señora de los Dolores
+- Ciudad:       Dolores Hidalgo, Guanajuato
+- Hora:         2:00 PM
+
+FIESTA
+- Lugar:        Salón El Jardín de Aurora
+- Distancia:    A 5 minutos de la Parroquia
+- Hora Inicio:  4:00 PM
+- Hora Término: 11:00 PM
+
+ENTRETENIMIENTO
+- 5:00 PM - 6:00 PM:   Tecladista
+- 6:00 PM - 11:00 PM:  Sonido "Fiesta Loca"
+
+PAQUETE FOTOGRÁFICO
+- Precio:       $6,000
+- Viáticos:     $500
+- TOTAL:        $6,500 MXN
+
+INCLUYE:
+✅ Cobertura por Sesión, Misa y 5 horas de Fiesta
+✅ 100 Fotos del Evento Impresas en 5x7 Pulgadas
+✅ 1 Película USB en 4K (3:00 hrs editada, musicalizada, titulada)
+✅ 1 Videoclip para proyectar + fotos del recuerdo
+✅ 1 Caja Impresa para la USB
+✅ 1 Foto Ampliada a 50x60 cm con marco
+✅ 1 Caja Impresa para las Fotografías
+✅ 1 Sesión de Fotografías antes del Evento
+
+================================================================================
+🚀 CÓMO USAR
+================================================================================
+
+OPCIÓN 1: ABRIR DIRECTAMENTE (MÁS FÁCIL)
+1. Ir a la carpeta geraldine-15-anos/
+2. Hacer doble clic en index.html
+3. Se abrirá en el navegador predeterminado
+
+OPCIÓN 2: SERVIDOR LOCAL CON PYTHON
+1. Abrir terminal/cmd en la carpeta del proyecto
+2. Ejecutar: python3 -m http.server 8000
+3. Ir a: http://localhost:8000 en el navegador
+
+OPCIÓN 3: SERVIDOR LOCAL CON NODE.JS
+1. Instalar: npm install -g http-server
+2. Ejecutar: http-server
+3. Ir a: http://localhost:8080
+
+================================================================================
+📝 PERSONALIZACIÓN
+================================================================================
+
+OPCIÓN 1: PANEL ADMINISTRATIVO (RECOMENDADO)
+1. Abrir admin.html en el navegador
+2. Rellenar todos los campos
+3. Hacer clic en "Guardar Cambios"
+4. ¡Listo! El sitio se actualiza automáticamente
+
+OPCIÓN 2: EDITAR DIRECTAMENTE
+1. Abrir archivos HTML en un editor de texto (VS Code, Notepad++, etc.)
+2. Cambiar la información
+3. Guardar y recargar en el navegador
+
+OPCIÓN 3: MODIFICAR config.js
+1. Abrir config.js con editor de texto
+2. Editar el objeto EVENT_CONFIG
+3. Guardar y recargar
+
+================================================================================
+🖨️ IMPRIMIR CONTRATO
+================================================================================
+
+1. Abrir el sitio en navegador
+2. Ir a "Ver Contrato"
+3. Hacer clic en "Imprimir Contrato"
+4. En la ventana de impresión:
+   - Márgenes: Ninguno o Mínimo
+   - Orientación: Vertical
+   - Escala: 100%
+5. Guardar como PDF o imprimir en papel
+
+================================================================================
+📤 COMPARTIR EL SITIO
+================================================================================
+
+OPCIÓN 1: GITHUB PAGES
+1. Crear cuenta en GitHub.com
+2. Crear repositorio xv-anos-geraldine
+3. Subir todos los archivos
+4. Activar GitHub Pages en Settings
+5. Sitio disponible en: https://usuario.github.io/xv-anos-geraldine/
+
+OPCIÓN 2: NETLIFY
+1. Ir a netlify.com
+2. Drag & drop la carpeta del proyecto
+3. Sitio disponible en URL pública automática
+
+OPCIÓN 3: USB/EMAIL
+1. Copiar todos los archivos a USB
+2. O comprimir como ZIP y enviar por email
+3. Los destinatarios abren index.html directamente
+
+================================================================================
+⚡ CARACTERÍSTICAS TÉCNICAS
+================================================================================
+
+TECNOLOGÍAS USADAS:
+- HTML5 semántico y accesible
+- CSS3 moderno (Flexbox, Grid, Gradientes)
+- JavaScript vanilla (sin dependencias)
+- Python 3 para scripts auxiliares
+
+COMPATIBILIDAD:
+- Chrome, Firefox, Safari, Edge (versiones recientes)
+- Windows, macOS, Linux
+- Responsive (móvil, tablet, desktop)
+
+RENDIMIENTO:
+- Carga rápida (sin librerías externas)
+- Tamaño optimizado
+- CSS crítico incrustado
+- No requiere servidor para funcionar
+
+ACCESIBILIDAD:
+- Contraste de colores WCAG AA
+- Navegación por teclado
+- Semántica HTML correcta
+- Escalable sin romper diseño
+
+================================================================================
+🔧 SOLUCIÓN DE PROBLEMAS
+================================================================================
+
+"El sitio no se abre"
+→ Asegurate de usar un navegador moderno
+→ Intenta con Chrome, Firefox o Edge
+
+"Los estilos no se ven"
+→ Limpia la caché del navegador (Ctrl+Shift+Del)
+→ Verifica que los archivos CSS estén en la carpeta css/
+
+"Los QR no funcionan"
+→ Instala Python y la librería qrcode: pip install qrcode[pil]
+→ Ejecuta: python3 scripts/generar_qr.py
+
+"Las imágenes no aparecen"
+→ Coloca imágenes en la carpeta images/
+→ Verifica que el nombre y extensión sean correctas
+
+================================================================================
+📚 DOCUMENTACIÓN DISPONIBLE
+================================================================================
+
+README.md                  → Información general del proyecto
+GUIA_INSTALACION.md        → Pasos detallados de instalación
+RESUMEN.txt               → Este archivo (referencia rápida)
+scripts/README.md         → Documentación de scripts Python
+
+================================================================================
+✅ CHECKLIST ANTES DE USAR
+================================================================================
+
+□ Abrir index.html en navegador y verificar que se ve correctamente
+□ Actualizar información personal desde admin.html
+□ Verificar que las fechas y horas sean correctas
+□ Probar botones de navegación (Contrato, Contacto)
+□ Imprimir el contrato y revisar formato
+□ Probar en diferentes navegadores (Chrome, Firefox, Edge)
+□ Probar en móvil/tablet
+□ Compartir con clientes y obtener retroalimentación
+□ Guardar respaldo de la configuración
+
+================================================================================
+🎁 PRÓXIMAS MEJORAS (OPCIONALES)
+================================================================================
+
+□ Agregar galería de fotos
+□ Agregar timeline interactivo del evento
+□ Integrar con Google Calendar
+□ Agregar mapa con ubicación del evento
+□ Añadir contador de días para el evento
+□ Crear confirmación de asistencia
+□ Agregar carrito de compra (si ofrece otros paquetes)
+□ Analytics y estadísticas de visitas
+□ Versión en inglés
+□ Integración con redes sociales
+
+================================================================================
+📞 SOPORTE Y CONTACTO
+================================================================================
+
+Si tienes problemas:
+1. Revisa GUIA_INSTALACION.md
+2. Verifica que todos los archivos estén presentes
+3. Intenta en otro navegador
+4. Limpia la caché del navegador
+5. Lee la documentación en scripts/README.md para scripts Python
+
+Para reportar problemas o sugerencias:
+- Revisa los archivos HTML y edita directamente si es necesario
+- Usa admin.html para cambios de configuración
+- Consulta la documentación incluida
+
+================================================================================
+🎉 ¡LISTO PARA CELEBRAR!
+================================================================================
+
+El sitio está completamente funcional y personalizado para:
+Geraldine Guadalupe Villegas
+
+31 de Diciembre de 2025
+Dolores Hidalgo, Guanajuato
+
+¡Que lo disfrutes y que la celebración sea inolvidable! ✨
+
+================================================================================
+Última actualización: Diciembre 2025
+Versión del proyecto: 1.0
+================================================================================
