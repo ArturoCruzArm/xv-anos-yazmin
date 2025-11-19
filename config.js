@@ -15,17 +15,17 @@ const EVENT_CONFIG = {
     eventDateISO: "2025-11-22",
 
     // Ceremonia religiosa
-    ceremonyLocation: "Parroquia del Niño Don Bosco",
-    ceremonyAddress: "San Juan Crisostomo 1102, Santa Rosa Plan de Ayala, Guanajuato, México",
-    ceremonyCity: "Santa Rosa Plan de Ayala, Guanajuato",
+    ceremonyLocation: "Proyecto Niños Don Bosco",
+    ceremonyAddress: "San Juan Crisóstomo 1102, Plan de Ayala, 37490 León de los Aldama, Gto.",
+    ceremonyCity: "León de los Aldama, Guanajuato",
     ceremonyTime: "1:00 PM",
     ceremonyHour: 13,
     ceremonyMinute: 0,
-    ceremonyMapsUrl: "https://maps.google.com/?q=San+Juan+Crisostomo+1102,Santa+Rosa+Plan+de+Ayala,Guanajuato",
+    ceremonyMapsUrl: "https://maps.app.goo.gl/F3G4sy1gMSffYqqH7",
 
     // Fiesta
     partyLocation: "Salón de Fiestas Memo",
-    partyAddress: "Al costado del rebombeo de SAPAL, Santa Rosa Plan de Ayala, Guanajuato, México",
+    partyAddress: "SAPAL, 37666 Plan de Ayala, Gto.",
     partyDistance: "Al terminar la ceremonia",
     partyStartTime: "3:00 PM",
     partyStartHour: 15,
@@ -33,7 +33,7 @@ const EVENT_CONFIG = {
     partyEndTime: "10:00 PM",
     partyEndHour: 22,
     partyEndMinute: 0,
-    partyMapsUrl: "https://maps.google.com/?q=Rebombeo+SAPAL,Santa+Rosa+Plan+de+Ayala,Guanajuato",
+    partyMapsUrl: "https://maps.app.goo.gl/KXTDK7go4oGTwHrj8",
 
     // Sesión de fotos
     photoSession: {
