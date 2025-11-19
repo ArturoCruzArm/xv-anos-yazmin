@@ -691,6 +691,7 @@ body::before {
     height: 100%;
     background: var(--gradient-gold);
     transition: width var(--transition-normal);
+    pointer-events: none;
 }
 
 .event-block:hover {
