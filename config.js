@@ -1,60 +1,70 @@
-// Configuración del evento - XV Años de Geraldine Guadalupe
+// Configuración del evento - XV Años de Yazmin del Carmen
 // Edita estos valores para personalizar la invitación y contrato
 
 const EVENT_CONFIG = {
     // Información de la quinceañera
-    quinceaneraName: "Geraldine Guadalupe Méndez Villegas",
-    quinceaneraShortName: "Geral",
+    quinceaneraName: "Yazmin del Carmen García Servín",
+    quinceaneraShortName: "Yazmin",
     quinceaneraAge: 15,
-    motherName: "Elida Villegas Hernández",
-    fatherName: "José Víctor Manuel Méndez Rayas",
+    motherName: "María del Carmen Servín Hernández",
+    fatherName: "José García",
     dressColor: "#D4AF37", // Dorado
 
     // Información del evento
-    eventDate: "31 de Diciembre de 2025",
-    eventDateISO: "2025-12-31",
+    eventDate: "22 de Noviembre de 2025",
+    eventDateISO: "2025-11-22",
 
     // Ceremonia religiosa
-    ceremonyLocation: "Parroquia de Nuestra Señora de los Dolores",
-    ceremonyAddress: "Calle Querétaro 1, Centro, 37800 Dolores Hidalgo Cuna de la Independencia Nacional, Gto., México",
-    ceremonyCity: "Dolores Hidalgo, Guanajuato",
-    ceremonyTime: "2:00 PM",
-    ceremonyHour: 14,
+    ceremonyLocation: "Parroquia del Niño Don Bosco",
+    ceremonyAddress: "San Juan Crisostomo 1102, Santa Rosa Plan de Ayala, Guanajuato, México",
+    ceremonyCity: "Santa Rosa Plan de Ayala, Guanajuato",
+    ceremonyTime: "1:00 PM",
+    ceremonyHour: 13,
     ceremonyMinute: 0,
-    ceremonyMapsUrl: "https://maps.google.com/?q=Parroquia+de+Nuestra+Señora+de+los+Dolores,Calle+Querétaro+1,Centro,37800+Dolores+Hidalgo",
+    ceremonyMapsUrl: "https://maps.google.com/?q=San+Juan+Crisostomo+1102,Santa+Rosa+Plan+de+Ayala,Guanajuato",
 
     // Fiesta
-    partyLocation: "Jardín de la Aurora",
-    partyAddress: "Prolongación Baja California Norte 61, Centro, 37800 Dolores Hidalgo Cuna de la Independencia Nacional, Gto., México",
-    partyDistance: "A 5 minutos de la Parroquia",
-    partyStartTime: "4:00 PM",
-    partyStartHour: 16,
+    partyLocation: "Salón de Fiestas Memo",
+    partyAddress: "Al costado del rebombeo de SAPAL, Santa Rosa Plan de Ayala, Guanajuato, México",
+    partyDistance: "Al terminar la ceremonia",
+    partyStartTime: "3:00 PM",
+    partyStartHour: 15,
     partyStartMinute: 0,
-    partyEndTime: "11:00 PM",
-    partyEndHour: 23,
+    partyEndTime: "10:00 PM",
+    partyEndHour: 22,
     partyEndMinute: 0,
-    partyMapsUrl: "https://maps.google.com/?q=Jardín+de+la+Aurora,Prolongación+Baja+California+Norte+61,Centro,37800+Dolores+Hidalgo",
+    partyMapsUrl: "https://maps.google.com/?q=Rebombeo+SAPAL,Santa+Rosa+Plan+de+Ayala,Guanajuato",
+
+    // Sesión de fotos
+    photoSession: {
+        date: "19 de Noviembre de 2025",
+        dateISO: "2025-11-19",
+        time: "3:00 PM",
+        location: "Expiatorio",
+        cost: 2500,
+        currency: "MXN"
+    },
 
     // Padrinos
     padrinos: {
         misa: {
-            names: "Amapola Cortez y Moisés Leon",
+            names: "Por confirmar",
             type: "Padrinos de Misa"
         },
         corona: {
-            name: "Elizabeth Juárez",
+            name: "Por confirmar",
             type: "Madrina de Corona"
         },
         brindis: {
-            name: "Diana Villegas",
+            name: "Por confirmar",
             type: "Madrina de Brindis"
         },
         muneca: {
-            name: "Jesús Méndez",
+            name: "Por confirmar",
             type: "Padrino de Muñeca"
         },
         regalo: {
-            name: "Areli Juárez",
+            name: "Por confirmar",
             type: "Madrina de Regalo Sorpresa"
         }
     },
@@ -69,16 +79,28 @@ const EVENT_CONFIG = {
     // Entretenimiento
     entertainment: [
         {
-            type: "Tecladista",
-            startTime: "5:00 PM",
-            endTime: "6:00 PM",
-            icon: "🎹"
+            type: "Comida",
+            startTime: "3:30 PM",
+            endTime: "5:30 PM",
+            icon: "🍽️"
         },
         {
-            type: "Sonido Fiesta Loca",
-            startTime: "6:00 PM",
-            endTime: "11:00 PM",
+            type: "Vals de la Quinceañera",
+            startTime: "5:30 PM",
+            endTime: "6:00 PM",
+            icon: "💃"
+        },
+        {
+            type: "Grupo Musical",
+            startTime: "7:00 PM",
+            endTime: "10:00 PM",
             icon: "🎵"
+        },
+        {
+            type: "Sonido",
+            startTime: "3:00 PM",
+            endTime: "10:00 PM",
+            icon: "🎶"
         }
     ],
 
@@ -189,3 +211,4 @@ function importConfig(jsonString) {
 
 console.log("Configuración del evento cargada correctamente");
 console.log("XV Años de", EVENT_CONFIG.quinceaneraName);
+console.log("Sesión fotográfica:", EVENT_CONFIG.photoSession.date, "a las", EVENT_CONFIG.photoSession.time, "en", EVENT_CONFIG.photoSession.location);
