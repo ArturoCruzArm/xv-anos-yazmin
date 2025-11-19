@@ -3,7 +3,7 @@
 
 const EVENT_CONFIG = {
     // Información de la quinceañera
-    quinceaneraName: "Yazmin del Carmen García Servín",
+    quinceaneraName: "Yazmin del Carmen García Hernández",
     quinceaneraShortName: "Yazmin",
     quinceaneraAge: 15,
     motherName: "María del Carmen Servín Hernández",
