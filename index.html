@@ -27,7 +27,7 @@
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
             padding: 40px;
             text-align: center;
@@ -104,45 +104,90 @@
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+            text-align: left;
         }
 
         .payment-info h3 {
             color: #0d47a1;
             font-size: 20px;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         .payment-option {
             background: white;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
-            margin: 10px 0;
+            margin: 15px 0;
             border-left: 4px solid #4CAF50;
         }
 
         .payment-option h4 {
             color: #2e7d32;
             font-size: 18px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center;
         }
 
-        .payment-option p {
+        .cost-breakdown {
+            margin: 15px 0;
+        }
+
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cost-item:last-child {
+            border-bottom: none;
+        }
+
+        .cost-label {
             color: #555;
-            line-height: 1.6;
+            flex: 1;
         }
 
-        .price {
-            font-size: 24px;
+        .cost-value {
+            color: #333;
             font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .total-cost {
+            background: #f0f0f0;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .total-cost .label {
+            color: #333;
+        }
+
+        .total-cost .amount {
             color: #2e7d32;
-            margin: 10px 0;
+        }
+
+        .special-option {
+            border-left-color: #ff9800;
+            background: #fff8e1;
+        }
+
+        .special-option h4 {
+            color: #e65100;
         }
 
         .deadline {
             background: #ffebee;
             border: 2px solid #f44336;
             border-radius: 10px;
-            padding: 15px;
+            padding: 20px;
             margin: 20px 0;
         }
 
@@ -156,6 +201,78 @@
             color: #c62828;
             font-weight: bold;
             font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .danger-box {
+            background: #ffcdd2;
+            border: 3px solid #d32f2f;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .danger-box h3 {
+            color: #b71c1c;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .danger-box p {
+            color: #c62828;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .danger-box strong {
+            color: #b71c1c;
+        }
+
+        .payment-methods {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .payment-methods h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .payment-method {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .payment-method h4 {
+            color: #667eea;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .payment-method p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .bank-account {
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e7d32;
+            text-align: center;
+            margin: 10px 0;
         }
 
         .contact-info {
@@ -207,8 +324,13 @@
                 font-size: 60px;
             }
 
-            .price {
-                font-size: 20px;
+            .cost-item {
+                flex-direction: column;
+            }
+
+            .cost-value {
+                margin-left: 0;
+                margin-top: 5px;
             }
         }
     </style>
@@ -227,29 +349,109 @@
 
         <div class="warning-box">
             <h3>⚠️ Sitio Bloqueado por Falta de Pago</h3>
-            <p>Este sitio ha sido temporalmente bloqueado debido a que no se ha completado el pago de los servicios contratados.</p>
+            <p>Este sitio ha sido temporalmente bloqueado debido a que no se ha completado el pago de los servicios contratados. El contrato anterior queda cancelado.</p>
         </div>
 
         <div class="payment-info">
-            <h3>💳 Información de Pago</h3>
+            <h3>💳 Opciones de Pago</h3>
 
             <div class="payment-option">
-                <h4>Opción de Pago Especial</h4>
-                <p><strong>Servicio Reducido:</strong> Solo fotos de la sesión previa + video o tomas de dron de la sesión</p>
-                <div class="price">$1,200.00</div>
-                <p style="color: #666;">+ $100.00 de la cita en el local</p>
-                <div class="price" style="font-size: 28px; color: #d32f2f;">Total: $1,300.00</div>
+                <h4>✅ OPCIÓN 1: Pago Especial (HOY O MAÑANA)</h4>
+                <div class="cost-breakdown">
+                    <p style="color: #2e7d32; font-weight: bold; margin-bottom: 15px;">Servicio Reducido: Solo fotos de sesión + video o tomas de dron</p>
+                    <div class="cost-item">
+                        <span class="cost-label">Servicio de sesión</span>
+                        <span class="cost-value">$1,200.00</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-label">Cita en el local</span>
+                        <span class="cost-value">$100.00</span>
+                    </div>
+                    <div class="total-cost">
+                        <span class="label">TOTAL:</span>
+                        <span class="amount">$1,300.00</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="deadline">
-                <h4>⏰ Fecha Límite</h4>
-                <p>El pago debe realizarse hoy o mañana (20 o 21 de Noviembre de 2025)</p>
-                <p style="margin-top: 10px; font-size: 14px;">Si no se cumple con esta fecha límite, se aplicará el costo original completo del contrato.</p>
+            <div class="payment-option special-option">
+                <h4>⚠️ OPCIÓN 2: Costos si NO se paga en plazo</h4>
+                <div class="cost-breakdown">
+                    <div class="cost-item">
+                        <span class="cost-label">Sesión fotos y video con dron</span>
+                        <span class="cost-value">$1,300.00</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-label">Descuento por fotos editadas</span>
+                        <span class="cost-value">-$200.00</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-label">Edición de fotos</span>
+                        <span class="cost-value">$600.00</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-label">Estudio de videoclip con música personalizada</span>
+                        <span class="cost-value">$800.00</span>
+                    </div>
+                    <div class="total-cost" style="background: #ffebee;">
+                        <span class="label">TOTAL:</span>
+                        <span class="amount" style="color: #d32f2f;">$2,500.00</span>
+                    </div>
+                    <p style="color: #e65100; margin-top: 15px; font-size: 14px;">
+                        <strong>Nota:</strong> Entrega por WhatsApp
+                    </p>
+                </div>
             </div>
 
-            <p style="color: #d32f2f; font-weight: bold; margin-top: 15px;">
-                ⚠️ NOTA IMPORTANTE: El contrato anterior queda cancelado. Esta es una nueva propuesta de pago reducido.
+            <div class="payment-option special-option">
+                <h4>📱 OPCIONAL: Invitaciones Web</h4>
+                <div class="cost-breakdown">
+                    <p style="color: #e65100; margin-bottom: 10px;">
+                        Invitaciones con fotos y video de la sesión (como las que le mandé)
+                    </p>
+                    <div class="cost-item">
+                        <span class="cost-label">Precio promoción (original $2,000)</span>
+                        <span class="cost-value">$500.00</span>
+                    </div>
+                    <p style="color: #d32f2f; font-weight: bold; margin-top: 10px; font-size: 14px;">
+                        ⚠️ Solo si NO se da de baja HOY
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deadline">
+            <h4>⏰ Fecha Límite para Opción 1</h4>
+            <p>El pago de $1,300 debe realizarse HOY o MAÑANA (20 o 21 de Noviembre de 2025)</p>
+            <p style="margin-top: 10px; font-size: 14px;">Después de esta fecha, se aplicarán los costos de la Opción 2 ($2,500)</p>
+        </div>
+
+        <div class="danger-box">
+            <h3>🚨 ADVERTENCIA IMPORTANTE</h3>
+            <p><strong>Si no se realiza el pago:</strong></p>
+            <p>1. Ni en la fecha comprometida por la señora Mary</p>
+            <p>2. Ni en una semana posterior al evento</p>
+            <p style="margin-top: 15px;"><strong>Las fotos y videos de la sesión serán liberados de nuestro almacenamiento (eliminados permanentemente)</strong>, quedando descartados de responsabilidad de entrega.</p>
+            <p style="margin-top: 15px; font-size: 14px;">
+                <strong>Contexto:</strong> Se citó en más de 3 ocasiones para dar anticipo y nunca se presentó. En la cuarta vez se presentó a la sesión, se realizaron los servicios pero no dio anticipo, siendo esto un foco rojo de alerta de posible estafa.
             </p>
+        </div>
+
+        <div class="payment-methods">
+            <h3>💰 Formas de Pago</h3>
+
+            <div class="payment-method">
+                <h4>🏦 Transferencia Bancaria BBVA</h4>
+                <p>Número de cuenta:</p>
+                <div class="bank-account">4152 3137 6890 8985</div>
+            </div>
+
+            <div class="payment-method">
+                <h4>🏠 Pago en Efectivo</h4>
+                <p><strong>Dirección:</strong></p>
+                <p>Padilla 112, Cumbres de Arbide</p>
+                <p>León, Guanajuato</p>
+            </div>
         </div>
 
         <div class="contact-info">
@@ -269,7 +471,7 @@
         </div>
 
         <div class="footer">
-            <p>Una vez realizado el pago, el sitio será desbloqueado y podrás acceder a todo el contenido.</p>
+            <p><strong>Una vez realizado el pago, el sitio será desbloqueado y podrás acceder a todo el contenido.</strong></p>
             <p style="margin-top: 10px;">Para cualquier duda o aclaración, contáctanos.</p>
         </div>
     </div>
