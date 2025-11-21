@@ -3,428 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Invitación XV Años - Yazmin del Carmen García Hernández">
-    <title>Yazmin - Mis XV Años</title>
+    <meta name="description" content="Acceso Restringido - Pago Pendiente">
+    <title>Acceso Restringido - XV Años Yazmin</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .lock-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .event-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .event-info h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .event-info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .event-info strong {
+            color: #333;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .warning-box p {
+            color: #856404;
+            line-height: 1.6;
+        }
+
+        .payment-info {
+            background: #e7f3ff;
+            border: 2px solid #2196F3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .payment-info h3 {
+            color: #0d47a1;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .payment-option {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .payment-option h4 {
+            color: #2e7d32;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .payment-option p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin: 10px 0;
+        }
+
+        .deadline {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .deadline h4 {
+            color: #c62828;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .deadline p {
+            color: #c62828;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .contact-info h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .lock-icon {
+                font-size: 60px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- PORTADA -->
-    <section class="page page-cover">
-        <div class="cover-content">
-            <div class="cover-decoration top-left">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.3"/>
-                    <circle cx="50" cy="50" r="35" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.4"/>
-                    <circle cx="50" cy="50" r="25" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.5"/>
-                </svg>
-            </div>
+    <div class="container">
+        <div class="lock-icon">🔒</div>
+        <h1>Acceso Restringido</h1>
 
-            <div class="cover-text">
-                <div class="invitation-label">Te invito a compartir</div>
-                <h1 class="cover-title">Mis XV Años</h1>
-                <div class="cover-name">Yazmin</div>
-                <div class="cover-date">22 de Noviembre del 2025</div>
-                <div class="cover-age-circle">
-                    <span class="age-number">15</span>
-                </div>
-                <div class="event-hashtag">
-                    <p class="hashtag-label">Comparte tus fotos con</p>
-                    <h3 class="hashtag-text">#YazminXV</h3>
-                    <p class="hashtag-sublabel">#Yazmin15Años #MisXVYazmin</p>
-                </div>
-            </div>
-
-            <div class="cover-decoration bottom-right">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.3"/>
-                    <circle cx="50" cy="50" r="35" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.4"/>
-                    <circle cx="50" cy="50" r="25" fill="none" stroke="#f3db8f" stroke-width="2" opacity="0.5"/>
-                </svg>
-            </div>
+        <div class="event-info">
+            <h2>XV Años de Yazmin del Carmen García Hernández</h2>
+            <p><strong>Quinceañera:</strong> Yazmin del Carmen García Hernández</p>
+            <p><strong>Madre:</strong> María del Carmen Servín Hernández (Mary García)</p>
+            <p><strong>Fecha del Evento:</strong> 22 de Noviembre de 2025</p>
         </div>
-    </section>
 
-    <!-- PADRES E INFORMACIÓN FAMILIAR -->
-    <section class="page page-parents">
-        <div class="page-content">
-            <h2 class="section-title">Con la Bendición de Dios</h2>
+        <div class="warning-box">
+            <h3>⚠️ Sitio Bloqueado por Falta de Pago</h3>
+            <p>Este sitio ha sido temporalmente bloqueado debido a que no se ha completado el pago de los servicios contratados.</p>
+        </div>
 
-            <div class="parents-container">
-                <div class="parent">
-                    <h3>María del Carmen Servín Hernández</h3>
-                    <p class="parent-label">Madre de la Quinceañera</p>
-                </div>
-                <div class="separator"></div>
-                <div class="parent">
-                    <h3>José García</h3>
-                    <p class="parent-label">Padre de la Quinceañera</p>
-                </div>
+        <div class="payment-info">
+            <h3>💳 Información de Pago</h3>
+
+            <div class="payment-option">
+                <h4>Opción de Pago Especial</h4>
+                <p><strong>Servicio Reducido:</strong> Solo fotos de la sesión previa + video o tomas de dron de la sesión</p>
+                <div class="price">$1,200.00</div>
+                <p style="color: #666;">+ $100.00 de la cita en el local</p>
+                <div class="price" style="font-size: 28px; color: #d32f2f;">Total: $1,300.00</div>
             </div>
 
-            <p class="family-text">
-                Se complacen en invitarte a la celebración de los XV años de
+            <div class="deadline">
+                <h4>⏰ Fecha Límite</h4>
+                <p>El pago debe realizarse hoy o mañana (20 o 21 de Noviembre de 2025)</p>
+                <p style="margin-top: 10px; font-size: 14px;">Si no se cumple con esta fecha límite, se aplicará el costo original completo del contrato.</p>
+            </div>
+
+            <p style="color: #d32f2f; font-weight: bold; margin-top: 15px;">
+                ⚠️ NOTA IMPORTANTE: El contrato anterior queda cancelado. Esta es una nueva propuesta de pago reducido.
             </p>
+        </div>
 
-            <div class="quinceañera-info">
-                <div class="info-card">
-                    <span class="info-label">Quinceañera</span>
-                    <span class="info-value">Yazmin del Carmen García Hernández</span>
-                </div>
-                <div class="info-card">
-                    <span class="info-label">Fecha del Evento</span>
-                    <span class="info-value">22 de Noviembre de 2025</span>
-                </div>
-                <div class="info-card">
-                    <span class="info-label">Lugar</span>
-                    <span class="info-value">Santa Rosa Plan de Ayala, Guanajuato</span>
-                </div>
+        <div class="contact-info">
+            <h3>📞 Contacto para Realizar el Pago</h3>
+            <div class="contact-item">
+                <p><strong>Arturo Cruz</strong></p>
+                <p>Foro 7 Fotografía, Video, Dron e Invitaciones Web</p>
+            </div>
+            <div class="contact-item">
+                <a href="tel:4779203776">📱 477 920 3776</a>
+            </div>
+            <div class="contact-item">
+                <a href="https://wa.me/524779203776?text=Hola,%20quiero%20realizar%20el%20pago%20del%20evento%20de%20XV%20años%20de%20Yazmin" target="_blank">
+                    💬 Enviar WhatsApp
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- PROGRAMA DEL EVENTO -->
-    <section class="page page-program">
-        <div class="page-content">
-            <h2 class="section-title">Programa del Evento</h2>
-
-            <!-- CEREMONIA RELIGIOSA -->
-            <div class="event-block">
-                <div class="event-header religious">
-                    <h3>Ceremonia Religiosa</h3>
-                    <p class="event-time">13:00 hrs</p>
-                </div>
-                <div class="event-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Lugar</span>
-                        <span class="detail-value">Proyecto Niños Don Bosco</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Dirección</span>
-                        <span class="detail-value">San Juan Crisóstomo 1102, Plan de Ayala, 37490 León de los Aldama, Gto.</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Hora de Inicio</span>
-                        <span class="detail-value">1:00 PM</span>
-                    </div>
-                    <div class="detail-item">
-                        <a href="https://maps.app.goo.gl/F3G4sy1gMSffYqqH7" target="_blank" class="btn btn-map">📍 Ver en Google Maps</a>
-                    </div>
-                    <div class="detail-item map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5!2d-101.1234!3d21.0123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAwJzQ0LjMiTiAxMDHCsDA3JzI0LjIiVw!5e0!3m2!1ses!2smx!4v1234567890"
-                            width="100%"
-                            height="300"
-                            style="border:0; border-radius: 15px;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RECEPCIÓN -->
-            <div class="event-block">
-                <div class="event-header reception">
-                    <h3>Recepción y Fiesta</h3>
-                    <p class="event-time">15:00 hrs</p>
-                </div>
-                <div class="event-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Lugar</span>
-                        <span class="detail-value">Salón de Fiestas Memo</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Dirección</span>
-                        <span class="detail-value">SAPAL, 37666 Plan de Ayala, Gto.</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Hora de Inicio</span>
-                        <span class="detail-value">3:00 PM</span>
-                    </div>
-                    <div class="detail-item">
-                        <a href="https://maps.app.goo.gl/KXTDK7go4oGTwHrj8" target="_blank" class="btn btn-map">📍 Ver en Google Maps</a>
-                    </div>
-                    <div class="detail-item map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5!2d-101.1234!3d21.0123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAwJzQ0LjMiTiAxMDHCsDA3JzI0LjIiVw!5e0!3m2!1ses!2smx!4v1234567891"
-                            width="100%"
-                            height="300"
-                            style="border:0; border-radius: 15px;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ENTRETENIMIENTO Y FIESTA -->
-            <div class="event-block">
-                <div class="event-header entertainment">
-                    <h3>Entretenimiento Musical</h3>
-                    <p class="event-time">15:00 - 22:00 hrs</p>
-                </div>
-                <div class="event-details">
-                    <div class="entertainment-item">
-                        <span class="time-slot">3:30 PM</span>
-                        <span class="entertainment-name">🍽️ Comida</span>
-                    </div>
-                    <div class="entertainment-item">
-                        <span class="time-slot">5:30 PM</span>
-                        <span class="entertainment-name">💃 Vals de la Quinceañera</span>
-                    </div>
-                    <div class="entertainment-item">
-                        <span class="time-slot">7:00 PM - 10:00 PM</span>
-                        <span class="entertainment-name">🎵 Grupo Musical</span>
-                    </div>
-                    <div class="entertainment-item">
-                        <span class="time-slot">3:00 PM - 10:00 PM</span>
-                        <span class="entertainment-name">🎶 Sonido</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Finalización</span>
-                        <span class="detail-value">10:00 PM</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- COUNTDOWN TIMER -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">Faltan:</h3>
-                <div class="countdown-timer">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">0</span>
-                        <span class="countdown-label">Días</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">0</span>
-                        <span class="countdown-label">Horas</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">0</span>
-                        <span class="countdown-label">Minutos</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">0</span>
-                        <span class="countdown-label">Segundos</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BOTÓN DE CALENDARIO -->
-            <div class="calendar-button-container">
-                <button onclick="addToCalendar()" class="btn-calendar">
-                    📅 Agregar a mi Calendario
-                </button>
-            </div>
+        <div class="footer">
+            <p>Una vez realizado el pago, el sitio será desbloqueado y podrás acceder a todo el contenido.</p>
+            <p style="margin-top: 10px;">Para cualquier duda o aclaración, contáctanos.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- ITINERARIO DEL DÍA -->
-    <section class="page page-timeline">
-        <div class="page-content">
-            <h2 class="section-title">Itinerario del Día</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-time">1:00 PM</div>
-                    <div class="timeline-content">
-                        <h3>Ceremonia Religiosa</h3>
-                        <p>Proyecto Niños Don Bosco</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">3:00 PM</div>
-                    <div class="timeline-content">
-                        <h3>Recepción</h3>
-                        <p>Bienvenida a los invitados en Salón de Fiestas Memo</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">3:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Comida</h3>
-                        <p>Disfruta de una deliciosa comida</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">5:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Vals de la Quinceañera</h3>
-                        <p>El baile más esperado de la noche</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">7:00 PM</div>
-                    <div class="timeline-content">
-                        <h3>¡Grupo Musical!</h3>
-                        <p>Baile y diversión con música en vivo</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">10:00 PM</div>
-                    <div class="timeline-content">
-                        <h3>Despedida</h3>
-                        <p>Fin de la celebración</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CIERRE/DESPEDIDA -->
-    <section class="page page-closing">
-        <div class="closing-content">
-            <div class="closing-message">
-                <p class="closing-text">
-                    "Un momento especial merece ser compartido con quienes amamos"
-                </p>
-                <p class="closing-subtitle">
-                    Te esperamos en esta celebración llena de amor y alegría
-                </p>
-
-                <!-- BOTONES PARA COMPARTIR -->
-                <div class="share-buttons">
-                    <p class="share-label">Comparte esta invitación:</p>
-                    <div class="share-icons">
-                        <button onclick="shareWhatsApp()" class="btn-share whatsapp" title="Compartir por WhatsApp">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                        </button>
-                        <button onclick="shareFacebook()" class="btn-share facebook" title="Compartir en Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </button>
-                        <button onclick="copyLink()" class="btn-share link" title="Copiar enlace">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCRIPTS -->
-    <script src="js/script.js"></script>
     <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const eventDate = new Date('2025-11-22T13:00:00').getTime();
-            const now = new Date().getTime();
-            const distance = eventDate - now;
+        // Deshabilitar clic derecho
+        document.addEventListener('contextmenu', event => event.preventDefault());
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours;
-            document.getElementById('minutes').textContent = minutes;
-            document.getElementById('seconds').textContent = seconds;
-        }
-
-        // Update countdown every second
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
-        // Funciones para compartir
-        function shareWhatsApp() {
-            const url = window.location.href;
-            const text = "¡Estás invitado a los XV Años de Yazmin! 🎉✨\n\nFecha: 22 de Noviembre, 2025\n\nMira la invitación aquí:";
-            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-
-        function shareFacebook() {
-            const url = window.location.href;
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-            window.open(facebookUrl, '_blank', 'width=600,height=400');
-        }
-
-        function copyLink() {
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
-                // Mostrar mensaje de confirmación
-                const button = event.target.closest('.btn-share');
-                const originalContent = button.innerHTML;
-                button.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>';
-
-                setTimeout(() => {
-                    button.innerHTML = originalContent;
-                }, 2000);
-            }).catch(err => {
-                console.error('Error al copiar:', err);
-                // Fallback para navegadores antiguos
-                const textArea = document.createElement('textarea');
-                textArea.value = url;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-                alert('Enlace copiado al portapapeles');
-            });
-        }
-
-        // Función para agregar al calendario
-        function addToCalendar() {
-            // Información del evento
-            const eventTitle = "XV Años de Yazmin";
-            const eventDescription = "Celebración de los XV años de Yazmin del Carmen García Hernández";
-            const eventLocation = "Proyecto Niños Don Bosco, San Juan Crisóstomo 1102, Plan de Ayala, 37490 León de los Aldama, Gto.";
-
-            // Fecha y hora del evento (Ceremonia Religiosa)
-            const eventStartDate = new Date('2025-11-22T13:00:00');
-            const eventEndDate = new Date('2025-11-22T22:00:00'); // Hasta el final de la fiesta
-
-            // Formatear fechas para .ics (formato: YYYYMMDDTHHmmss)
-            const formatDate = (date) => {
-                const year = date.getFullYear();
-                const month = String(date.getMonth() + 1).padStart(2, '0');
-                const day = String(date.getDate()).padStart(2, '0');
-                const hours = String(date.getHours()).padStart(2, '0');
-                const minutes = String(date.getMinutes()).padStart(2, '0');
-                const seconds = String(date.getSeconds()).padStart(2, '0');
-                return `${year}${month}${day}T${hours}${minutes}${seconds}`;
-            };
-
-            // Crear contenido del archivo .ics
-            const icsContent = [
-                'BEGIN:VCALENDAR',
-                'VERSION:2.0',
-                'PRODID:-//XV Años Yazmin//ES',
-                'CALSCALE:GREGORIAN',
-                'METHOD:PUBLISH',
-                'BEGIN:VEVENT',
-                `DTSTART:${formatDate(eventStartDate)}`,
-                `DTEND:${formatDate(eventEndDate)}`,
-                `SUMMARY:${eventTitle}`,
-                `DESCRIPTION:${eventDescription}`,
-                `LOCATION:${eventLocation}`,
-                'STATUS:CONFIRMED',
-                'SEQUENCE:0',
-                'BEGIN:VALARM',
-                'TRIGGER:-PT24H',
-                'DESCRIPTION:Recordatorio del evento',
-                'ACTION:DISPLAY',
-                'END:VALARM',
-                'END:VEVENT',
-                'END:VCALENDAR'
-            ].join('\r\n');
-
-            // Crear blob y descargar
-            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'XV-Anos-Yazmin.ics';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        // Deshabilitar teclas de desarrollo
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123 || // F12
+               (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || // Ctrl+Shift+I
+               (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) || // Ctrl+Shift+J
+               (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) { // Ctrl+U
+                return false;
+            }
         }
     </script>
 </body>
